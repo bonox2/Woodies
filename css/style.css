@@ -146,6 +146,10 @@ i {
   max-width: 952px;
   margin: 0 auto;
 }
+picture>img{
+  width: 100%;
+  height: auto;
+}
 :root {
   --text-color: #333;
   --text-2-color: #595959;
@@ -169,7 +173,7 @@ body {
   color: var(--text-color);
 }
 /* base start */
-.orange-btn:hover {
+.orange:hover {
   transition: 0.3s;
   background-color: transparent;
   border: solid 1px #000;
@@ -225,6 +229,10 @@ body {
   border-radius: 4px;
   color: var(--text-light-color);
   border: 1px solid #fff;
+}
+picture>img{
+  width: 100%;
+  height: auto;
 }
 /* base end */
 .header {
@@ -325,9 +333,6 @@ body {
   font-weight: 700;
   margin-bottom: 15px;
 }
-.hero-img {
-  width: 50%;
-}
 
 /* hero end */
 /*about-us  start*/
@@ -353,7 +358,7 @@ body {
 .about-us-img.deco {
   width: 425px;
 }
-.about-us-img.deco::before {
+.about-us-img.deco>picture::before {
   content: "";
   display: inline-flex;
   width: 278px;
@@ -501,15 +506,14 @@ body {
 .testimony-slide-img {
   width: 240px;
   height: 320px;
-  border-radius: 70px 0 70px 0;
+  border-radius: 40% 0 ;
   object-fit: cover;
   object-position: center;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.testimony-slide-img:first-child {
+.testimony-slide-imgs>picture:first-child {
   margin-right: 40px;
 }
-
 .testimony-slide-text {
   border: 1px solid;
   border-color: var(--theme-color-2);
@@ -549,6 +553,58 @@ body {
   line-height: 16px;
   color: var(--text-3-color);
 }
+.tesyimony-with-swiper{
+  display: flex;
+  flex-direction: column;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+.slider{
+  width: 380px;
+}
+.slider-btns{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.slider .swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination > .swiper-pagination-bullet {
+  width: 40px;
+  border-radius: 999px;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  background-color: orange;
+}
+.swiper-pagination{
+  padding: 25px;
+  width: 100%;
+  margin: 30px 0 0 0;
+}
+.slider-thumbs .swiper-slide{
+  display: flex;
+  justify-content: space-between;
+}
+.test-button-prev,.test-button-next{
+  border: none;
+  background-color: transparent;
+  margin: 20px 8px 0 8px;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.test-button-prev::before{
+  margin: 0 10px;
+}
+.test-button-next::after{
+  margin: 0 10px;
+  width: 32px;
+}
 /*testimony end*/
 /*subscribe start*/
 .subscribe iframe {
@@ -560,13 +616,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding-bottom: 90px;
-  flex-direction: column;
 }
 .subscribe-txt {
   width: 500px;
   font-size: 18px;
   line-height: 25px;
-  margin-bottom: 30px;
 }
 .subscribe-txt > h5 {
   font-weight: 700;
@@ -575,11 +629,9 @@ body {
 }
 .subscribe-box {
   margin: auto 0;
-}
-.subscribe-form{
   display: flex;
 }
-.subscribe-box >form> input {
+.subscribe-box > input {
   padding: 9px 180px 9px 16px;
   border: 1px solid #daa520;
   border-radius: 4px 0 0 4px;
@@ -590,21 +642,6 @@ body {
   padding: 9px 24px;
   color: var(--text-light-color);
   border: solid 1px transparent;
-}
-.subscribe-btn{
-  background-color: var(--theme-color);
-  color: var(--text-light-color);
-  background: #daa520;
-  border-radius: 0 4px 4px 0;
-  padding: 9px 24px;
-  border: solid 1px transparent;
-  cursor: pointer;
-}
-.subscribe-btn:hover{
-  transition: .3s;
-  background-color: transparent;
-  color: #000;
-  border: solid 1px #000;
 }
 /*subscribe end*/
 /*footer start*/
@@ -878,29 +915,28 @@ body {
   .subscribe-txt > p {
     display: flex;
   }
+  .subscribe-box{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .subscribe-box > input {
+    padding: 9px 10px;
+    border-radius: 4px;
+    width: 100%;
+  }
+  .subscribe-box > a {
+    padding: 9px 20px;
+    border-radius: 4px;
+    margin: 20px auto;
+  }
   .navbar-footer:not(.first){
     width: 48%;
     text-align: center;
     margin-bottom: 20px;
   }
-  .subscribe-form{
-    display: flex;
-    flex-direction: column;
-  }
-  .subscribe-box >form> input{
-    padding: 9px ;
-    border: 1px solid #daa520;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
-  .subscribe-btn{
-    border-radius: 4px;
-    padding: 10px 40px;
-    margin: 0 auto;
-  }
 }
 @media (max-width: 320px) {
-  /* .nav{
+  .nav{
     display: block;
   }
   .navbar>ul>li{
@@ -926,5 +962,5 @@ body {
   .navbar-footer{
     width: 50%;
     margin-bottom: 30px;
-  } */
+  }
 }
