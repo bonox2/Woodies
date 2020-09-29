@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>Woodies</title>
   </head>
   <body>
@@ -17,11 +15,21 @@
         <nav class="navbar">
           <a href="index.html" class="logo"> Woodies </a>
           <ul class="nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about-us">About us</a></li>
-            <li><a href="#how-it-works">How it wokrs</a></li>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#testimony">Testimony</a></li>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#about-us">About us</a>
+            </li>
+            <li>
+              <a href="#how-it-works">How it wokrs</a>
+            </li>
+            <li>
+              <a href="#categories">Categories</a>
+            </li>
+            <li>
+              <a href="#testimony">Testimony</a>
+            </li>
           </ul>
           <button class="signup-btn transparent">Sign up</button>
         </nav>
@@ -31,17 +39,18 @@
       <div class="container hero-container">
         <div class="hero-text">
           <h1 class="hero-title">
-            Are you looking for <strong>woodden furniture</strong> for your
-            place?
+            Are you looking for
+            <strong>woodden furniture</strong>
+            for your place?
           </h1>
           <h2 class="hero-slogan">This is the Right Place</h2>
           <button class="main-btn orange">Explore Furniture</button>
         </div>
-        <img
-          class="hero-img"
-          src="./img/hero-table.png"
-          alt="woodden furniture"
-        />
+        <picture>
+          <source srcset="./img/hero-table.webp" type="image/webp"/>
+          <source srcset="./img/hero-table.png" type="image/png"/>
+          <img class="hero-img" src="./img/hero-table.png" alt="woodden furniture" />
+        </picture>
       </div>
     </section>
     <section class="about-us" id="about-us">
@@ -52,32 +61,35 @@
         </h3>
         <div class="about-us-content">
           <div class="about-us-img deco">
-            <img
-              src="./img/wooden-plates.png"
-              alt="Modern wooden furniture for home"
-            />
+            <picture>
+              <source srcset="./img/wooden-plates.webp" type="image/webp"/>
+              <source srcset="./img/wooden-plates.png" type="image/png"/>
+              <img src="./img/wooden-plates.png" alt="Modern wooden furniture for home" />
+            </picture>
           </div>
           <div class="about-us-text">
             <h4>
-              <strong>Woodies</strong> is the
+              <strong>Woodies</strong>
+              is the
               <strong>home of modern wooden furniture</strong>
             </h4>
-            <p>
-              the answer to your need for furniture with shapes, sizes and
-              colors.
-            </p>
+            <p>the answer to your need for furniture with shapes, sizes and colors.</p>
           </div>
         </div>
         <div class="about-us-content reverse">
           <div class="about-us-img">
-            <img src="./img/wooden-shovels.png" alt="wooden shovels" />
+            <picture>
+              <source srcset="./img/wooden-shovels.webp" type="image/webp"/>
+              <source srcset="./img/wooden-shovels.png" type="image/png"/>
+              <img src="./img/wooden-shovels.png" alt="wooden shovels" />
+            </picture>
           </div>
           <div class="about-us-text long">
-            <h4>Customized furniture <strong>made just for you</strong></h4>
-            <p>
-              Get it easy to adjust furniture to the shape and size of your
-              dwelling or business.
-            </p>
+            <h4>
+              Customized furniture
+              <strong>made just for you</strong>
+            </h4>
+            <p>Get it easy to adjust furniture to the shape and size of your dwelling or business.</p>
           </div>
         </div>
       </div>
@@ -90,19 +102,35 @@
         </h3>
         <div class="steps">
           <div class="step" data-count="1">
-            <img src="img/step1.svg" alt=" Step 1 Choose Design" />
+            <picture>
+              <source srcset="./img/step1.webp" type="image/webp"/>
+              <source srcset="./img/step1.svg" type="image/svg"/>
+              <img src="./img/step1.svg" alt=" Step 1 Choose Design" />
+            </picture>
             <h4>Choose Design</h4>
           </div>
           <div class="step" data-count="2">
-            <img src="img/step2.svg" alt="Step 2 area measuring" />
+            <picture>
+              <source srcset="./img/step2.webp" type="image/webp"/>
+              <source srcset="./img/step2.svg" type="image/svg"/>
+              <img src="./img/step2.svg" alt="Step 2 area measuring" />
+            </picture>
             <h4>Area measuring</h4>
           </div>
           <div class="step" data-count="3">
-            <img src="img/step3.svg" alt="Step 3 budgeting" />
+            <picture>
+              <source srcset="./img/step3.webp" type="image/webp"/>
+              <source srcset="./img/step3.svg" type="image/svg"/>
+              <img src="./img/step3.svg" alt="Step 3 budgeting" />
+            </picture>
             <h4>Budgeting</h4>
           </div>
           <div class="step" data-count="4">
-            <img src="img/step4.svg" alt="Step 4 production" />
+            <picture>
+              <source srcset="./img/step4.webp" type="image/webp"/>
+              <source srcset="./img/step4.svg" type="image/svg"/>
+              <img src="./img/step4.svg" alt="Step 4 production" />
+            </picture>
             <h4>Production</h4>
           </div>
         </div>
@@ -118,27 +146,47 @@
         <div class="categories-wrap">
           <div class="category color-2">
             <h4 class="category-title">Desk</h4>
-            <img class="category-img" src="./img/desk.png" alt="Desk">
+            <picture class="category-img" >
+              <source srcset="./img/desk.webp" type="image/webp"/>
+              <source srcset="./img/desk.png" type="image/png"/>
+              <img class="category-img" src="./img/desk.png" alt="Desk" />
+            </picture>
             <button class="category-shop-btn transparent">Shop now</button>
           </div>
           <div class="category color-1">
             <h4 class="category-title">Chair</h4>
-            <img class="category-img" src="./img/Chair.png" alt="Chair">
+            <picture class="category-img" >
+              <source srcset="./img/Chair.webp" type="image/webp"/>
+              <source srcset="./img/Chair.png" type="image/png"/>
+              <img class="category-img" src="./img/Chair.png" alt="Chair" />
+            </picture>
             <button class="category-shop-btn transparent">Shop now</button>
           </div>
           <div class="category color-3">
             <h4 class="category-title">Kitchenware</h4>
-            <img class="category-img" src="./img/Kitchenware.png" alt="Kitchenware">
+            <picture class="category-img" >
+              <source srcset="./img/Kitchenware.webp" type="image/webp"/>
+              <source srcset="./img/Kitchenware.png" type="image/png"/>
+              <img class="category-img" src="./img/Kitchenware.png" alt="Kitchenware" />
+            </picture class="category-img" >
             <button class="category-shop-btn transparent">Shop now</button>
           </div>
           <div class="category color-2">
             <h4 class="category-title">Book Shelf</h4>
-            <img class="category-img" src="./img/Book Shelf.png" alt="Book Shelf">
+            <picture class="category-img" >
+              <source srcset="./img/Book Shelf.webp" type="image/webp"/>
+              <source srcset="./img/Book Shelf.png" type="image/png"/>
+              <img class="category-img" src="./img/Book Shelf.png" alt="Book Shelf" />
+            </picture class="category-img" >
             <button class="category-shop-btn transparent">Shop now</button>
           </div>
           <div class="category color-1">
             <h4 class="category-title">Electronics</h4>
-            <img class="category-img" src="./img/Electronics.png" alt="Electronics">
+            <picture class="category-img" >
+              <source srcset="./img/Electronics.webp" type="image/webp"/>
+              <source srcset="./img/Electronics.png" type="image/png"/>
+              <img class="category-img" src="./img/Electronics.png" alt="Electronics" />
+            </picture>
             <button class="category-shop-btn transparent">Shop now</button>
           </div>
         </div>
@@ -153,47 +201,81 @@
         <div class="testimony-slider">
           <div class="testimony-slide">
             <div class="testimony-slide-imgs">
-              <img class="testimony-slide-img" src="img/slide-img-1.webp" alt="slide arrow left">
-              <img class="testimony-slide-img" src="img/slide-img-2.webp" alt="slide arrow left">
+              <picture>`
+                <source srcset="img/slide-img-1.webp" type="image/webp"/>
+                <source srcset="img/slide-img-1.jpg" type="image/jpg"/>
+                <img class="testimony-slide-img" src="img/slide-img-1.webp" alt="slide arrow left" />
+              </picture>
+              <picture>
+                <source srcset="img/slide-img-1.webp" type="image/webp"/>
+                <source srcset="img/slide-img-1.jpg" type="image/jpg"/>
+                <img class="testimony-slide-img" src="img/slide-img-2.webp" alt="slide arrow left" />
+              </picture>
             </div>
-            <div class="testimony-slide-text">
-              <div class="comment-rate">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <p class="comment-text">My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!</p>
-              <div class="comment-author">
-                  <img class="comment-author-avatar" src="./img/comment-avatar.jpg" alt="author's avatar">
+            <div class="tesyimony-with-swiper">
+              <div class="testimony-slide-text">
+                <div class="comment-rate">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p class="comment-text">My experience with WOODIES is a complete success, from customed furniture, range of product, modern design, purchasing experience, the delivery and newsletter. Litterally everything is great. Thank you!</p>
+                <div class="comment-author">
+                  <picture>
+                    <source srcset="./img/comment-avatar.webp" type="image/webp"/>
+                    <source srcset="./img/comment-avatar.jpg" type="image/jpg"/>
+                    <img class="comment-author-avatar" src="./img/comment-avatar.jpg" alt="author's avatar" />
+                  </picture>
                   <div class="comment-author-name">
                     <h5>Sandra Dewi</h5>
                     <h6>Jakarta Selatan</h6>
                   </div>
+                </div>
               </div>
+              <div class="swiper-container slider">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                    </div>
+                    <div class="swiper-slide">
+                    </div>
+                </div>
+                
+                <div class="slider-btns">
+                    <button class="test-button-prev"><i class="fas fa-long-arrow-alt-left"></i>Previous</button>
+                    <button class="test-button-next">Next<i class="fas fa-long-arrow-alt-right"></i></button>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+              <script>
+                const slider = new Swiper('.swiper-container', {
+                  navigation: {
+                    nextEl: '.test-button-next',
+                    prevEl: '.test-button-prev',
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                  },
+                })
+              </script>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- <section class="subscribe">
-      <div class="container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5128.057980995908!2d36.24966024307179!3d50.010811835519924!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfbc5fbe92e807d69!2z0KPRh9C10LHQvdC-LdC00YDQtdGB0YHQuNGA0L7QstC-0YfQvdCw0Y8g0L_Qu9C-0YnQsNC00LrQsCDQutC40L3QvtC70L7Qs9C40YfQtdGB0LrQvtC5INCz0YDRg9C_0L_RiyAi0JDQstCw0L3Qs9Cw0YDQtCI!5e0!3m2!1sru!2sua!4v1600015628535!5m2!1sru!2sua"  frameborder="0" ></iframe>
-      </div>
-    </section> -->
     <footer class="footer" id="footer">
       <div class="container">
         <div class="subscribe-main">
           <div class="subscribe-txt">
-            <h5>
-              Subscribe to our newsletter
-            </h5>
+            <h5>Subscribe to our newsletter</h5>
             <p>A monthly digest of the new WOODIES products, hot offers, and resources.</p>
           </div>
           <div class="subscribe-box">
-            <input class="search-txt" type="text" name="" placeholder="Your email address">
-            <a href="#" class="orange" >Subscribe</a>
+            <input class="search-txt" type="text" name="" placeholder="Your email address" />
+            <a href="#" class="orange">Subscribe</a>
           </div>
         </div>
       </div>
@@ -201,36 +283,68 @@
         <div class="main-footer">
           <ul class="navbar-footer first">
             <a href="index.html" class="logo">Woodies</a>
-            <li><a href="tel:+10128967453">(012) 8967453</a></li>
-            <li><a href="mailto:woodies@gmail.com">woodies@gmail.com</a></li>
-            <li><a href="https://goo.gl/maps/qP31kcxoQaJCfQF4A" target="_blank">Jakarta, Indonesia</a></li>
+            <li>
+              <a href="tel:+10128967453">(012) 8967453</a>
+            </li>
+            <li>
+              <a href="mailto:woodies@gmail.com">woodies@gmail.com</a>
+            </li>
+            <li>
+              <a href="https://goo.gl/maps/qP31kcxoQaJCfQF4A" target="_blank">Jakarta, Indonesia</a>
+            </li>
           </ul>
           <ul class="navbar-footer">
             <h5>Product</h5>
-            <li><a href="#">Furnitures</a></li>
-            <li><a href="#">Packages</a></li>
-            <li><a href="#">Services</a></li>
+            <li>
+              <a href="#">Furnitures</a>
+            </li>
+            <li>
+              <a href="#">Packages</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
           </ul>
           <ul class="navbar-footer">
             <h5>Resources</h5>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">FAQs</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
           </ul>
           <ul class="navbar-footer">
             <h5>Company</h5>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">Our Team</a></li>
-          </ul><ul class="navbar-footer">
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Jobs</a>
+            </li>
+            <li>
+              <a href="#">Our Team</a>
+            </li>
+          </ul>
+          <ul class="navbar-footer">
             <h5>Follow Us</h5>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li>
+              <a href="#">Facebook</a>
+            </li>
+            <li>
+              <a href="#">Instagram</a>
+            </li>
+            <li>
+              <a href="#">Twitter</a>
+            </li>
           </ul>
         </div>
         <div class="patenet">© 2020 WOODIES</div>
       </div>
     </footer>
+    
   </body>
 </html>
